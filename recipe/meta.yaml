@@ -1,6 +1,6 @@
 {% set name = "django-bootstrap4" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "3da770392819267eda2f774bcf832460af00db21089b94caf4df94be8a48c48c" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "180edf28d8dcdcee56ca8d7919147c3c98031ecc898c063b228f9855746de80a" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
