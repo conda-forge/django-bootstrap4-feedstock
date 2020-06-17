@@ -1,6 +1,6 @@
 {% set name = "django-bootstrap4" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "39f97cbce85eb66f6d76be2029bae171bd3863d0c6932b1c2dae7f299c569b90" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "e38e6be5e7abf1ff3d48ba77b6c6f5550f0e1b2b84ab666c68fe9d70e764c813" %}
 
 package:
   name: {{ name|lower }}
@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   noarch: python
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   build:
@@ -30,14 +30,14 @@ test:
   imports:
     - bootstrap4
     - bootstrap4.templatetags
-    
+
 about:
-  home: 'https://github.com/zostera/django-bootstrap4'
+  home: https://github.com/zostera/django-bootstrap4
   license: Apache 2.0
   license_family: Apache
   license_file: LICENSE
   summary: Bootstrap 4 integration with Django.
-  description:  Write Django as usual, and let django-bootstrap4 make template output into Bootstrap 4 code.  
+  description: Write Django as usual, and let django-bootstrap4 make template output into Bootstrap 4 code.
   doc_url: http://django-bootstrap4.readthedocs.io/
   dev_url: https://github.com/zostera/django-bootstrap4
 
