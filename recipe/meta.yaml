@@ -1,4 +1,4 @@
-{% set version = "3.0.1" %}
+{% set version = "21.2" %}
 
 package:
   name: django-bootstrap4
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/d/django-bootstrap4/django-bootstrap4-{{ version }}.tar.gz
-  sha256: c5c97fb473bb56e3a91b4f4be52b74a3fc384ec3baae50dd0807fa922a55ec2b
+  sha256: 0b9eeafecd132c0e6af8688493816fc2ae172d2eb3d98e66dc5eb48757da65df
 
 build:
   number: 0
@@ -43,7 +43,7 @@ about:
   summary: Bootstrap 4 for Django
   license: BSD-3-Clause
   license_file: LICENSE
-  description:  Write Django as usual, and let django-bootstrap4 make template output into Bootstrap 4 code.
+  description: Write Django as usual, and let django-bootstrap4 make template output into Bootstrap 4 code.
   doc_url: http://django-bootstrap4.readthedocs.io/
   dev_url: https://github.com/zostera/django-bootstrap4
 
