@@ -5,23 +5,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/d/django-bootstrap4/django-bootstrap4-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/d/django-bootstrap4/django-bootstrap4-{{ version }}.tar.gz
   sha256: c5c97fb473bb56e3a91b4f4be52b74a3fc384ec3baae50dd0807fa922a55ec2b
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
     - beautifulsoup4 >=4.8.0
     - django >=2.2
     - importlib-metadata <3
-    - python >=3.6
+    - python >={{ python_min }}
 
 test:
   source_files:
@@ -36,6 +36,7 @@ test:
   requires:
     - pip
     - gdal
+    - python {{ python_min }}
 
 
 about:
