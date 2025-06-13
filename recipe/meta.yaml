@@ -1,5 +1,5 @@
 {% set name = "django-bootstrap4" %}
-{% set version = "24.4" %}
+{% set version = "25.1" %}
 
 package:
   name: {{ name|lower }}
@@ -36,7 +36,6 @@ test:
     - python manage.py test
   requires:
     - pip
-    - gdal
     - python {{ python_min }}
 
 about:
