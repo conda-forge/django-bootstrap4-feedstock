@@ -36,6 +36,7 @@ test:
     - python manage.py test
   requires:
     - pip
+    - gdal
     - python {{ python_min }}
 
 about:
