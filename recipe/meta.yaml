@@ -1,5 +1,5 @@
 {% set name = "django-bootstrap4" %}
-{% set version = "25.2" %}
+{% set version = "26.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/django_bootstrap4-{{ version }}.tar.gz
-  sha256: a2c6040364513dc73894f2f961d10b8d546a73230ae0f4074e5c51fb5e908764
+  sha256: 164ff10d7f21c627301bca9b5186f0b0478a2c5647d35147283f3a125bc98018
 
 build:
   noarch: python
